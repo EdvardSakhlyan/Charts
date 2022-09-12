@@ -1,0 +1,124 @@
+nav{
+    width: 60px;
+    background: #171717;
+    z-index: 102;
+    position: fixed;
+    height: 100%;
+}
+
+.redLogoSection{
+    background-color: rgb(222, 27, 25);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.redLogo{
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/Vector Smart Object.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navToolsSection {
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 101;
+    position: fixed;
+    width: 60px;
+}
+
+.iconSection{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    color: white;
+}
+
+.iconSection:hover{
+    background: #262b32;
+}
+
+.center {
+    justify-content: center;
+}
+
+.center:hover {
+    background: #101010;
+}
+
+.iconSection p {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.navToolsSectionLight{
+    background: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    z-index: 100;
+}
+
+.hiddenNav{
+    width: 220px;
+    background: #30363e;
+    height: 500px;
+    position: absolute;
+    top: 60px;
+    left: -160px;
+    z-index: 98;
+    transition: all ease-in-out 250ms;
+}
+
+.openHiddenNav{
+    background-color: rgb(36, 39, 44);
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    width: 13px;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    z-index: 60;
+    border-radius: 0 5px 5px 0;
+    transition: all ease-in-out 250ms;
+    cursor: pointer;
+}
+
+#openHiddenNavId{
+    display: none;
+}
+
+#openHiddenNavId:checked ~ .openHiddenNav{
+    transition: all ease-in-out 250ms;
+    left: 280px;
+}
+
+.openHiddenNav svg{
+    transition: all ease-in-out 250ms;
+}
+
+#openHiddenNavId:checked ~ .openHiddenNav svg{
+    transition: all ease-in-out 250ms;
+    transform: rotate(-180deg);
+}
+
+#openHiddenNavId:checked ~ .hiddenNav {
+    transition: all ease-in-out 250ms;
+    left: 60px;
+}
+

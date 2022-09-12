@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 700px){
+    header{
+        padding-left: 120px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header{
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    header{
+        padding-left: 20px;
+    }
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerRight i {
+    color: #636363;
+}
+
+.userNameSection{
+    width: 200px;
+}
+
+.userNameSection p:nth-child(2){
+    color: #989898;
+}

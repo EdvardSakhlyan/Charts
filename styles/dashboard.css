@@ -1,0 +1,120 @@
+.dashboard {
+    width: 100%;
+    display: flex;
+}
+
+.lineChart{
+    background: #2a2a2a;
+    padding: 20px 20px 10px;
+    width: 45%;
+}
+
+.lineChart > div , .mapChart > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lineChart > div p , .mapChart > div p{
+    font-size: 16px;
+    color: white;
+}
+
+.lineChart > div p i , .mapChart > div p i{
+    margin-left: 5px;
+}
+
+.lineChart p:first-child{
+    color: white;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.doughnutChart{
+    width: 20%;
+    padding: 20px 20px 10px;
+    background: #222222;
+}
+
+.doughnutChart p {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.mapChart{
+    width: 35%;
+    background: #2a2a2a;
+}
+
+.mapChartTitle p:first-child {
+    color: white;
+    font-size: 21px;
+    margin: 20px;
+}
+
+
+
+#myChartLine{
+    /*height: 100%!important;*/
+}
+
+#myChartDoughnut{
+    background: #222222;
+    margin-top: 50px;
+}
+
+#myChartMap {
+    background: #2a2a2a;
+
+    /*width: 100% !important;*/
+    /*height: 100% !important;*/
+}
+
+.mapChart > div{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.chartCountries {
+    padding: 0 20px;
+}
+
+.chartCountries li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px #262626;
+    height: 35px;
+}
+
+.chartCountries i {
+    margin-left: 5px;
+}
+
+.chartCountries  p {
+    font-size: 16px;
+    color: #c9c9c9;
+}
+
+.chartCountries li:first-child{
+    border-top: solid 1px #262626;
+    color: rgb(255, 255, 255);
+    justify-content: end;
+}
+
+@media screen and (max-width: 700px){
+    .dashboard {
+        flex-direction: column;
+    }
+    .lineChart{
+        width: 100%;
+    }
+    .doughnutChart{
+        width: 100%;
+    }
+    .mapChart{
+        width: 100%;
+    }
+}
+
